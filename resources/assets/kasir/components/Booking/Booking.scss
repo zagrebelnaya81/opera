@@ -1,0 +1,174 @@
+.booking {
+  margin: 5px 0;
+  height: calc(100vh - 46px);
+  display: flex;
+  flex-direction: column;
+}
+
+.booking__title {
+  font-size: 1.8em;
+  text-align: center;
+  margin: 0 0 0.5em;
+}
+
+.booking__form {
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+
+  &--short {
+    max-width: 600px;
+    display: block;
+  }
+}
+
+.booking__search {
+  width: 50%;
+  display: flex;
+  align-items: center;
+
+  .booking__form--short & {
+    width: 100%;
+  }
+}
+
+.booking__search-label {
+  display: block;
+  margin: 0 10px 0 0;
+}
+
+.booking__search-input {
+  width: calc(100% - 135px);
+  margin: 0 15px 0 0;
+}
+
+.booking__search-btn {
+  min-width: 120px;
+  height: 29px;
+}
+
+.booking__search-type {
+  width: 50%;
+  padding: 0 0 0 10px;
+  display: flex;
+  align-items: center;
+
+  label {
+    margin: 0 0 0 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .form-check-label {
+    margin: 0 0 0 5px;
+  }
+}
+
+.booking__result {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.booking__table-wrap {
+  margin: -1px;
+
+  .table {
+    table-layout: fixed;
+    margin: 0;
+  }
+}
+
+.booking__table {
+  text-align: center;
+  font-size: 0.9em;
+  table-layout: fixed;
+
+  th {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+
+  td {
+    vertical-align: middle;
+  }
+
+  tbody {
+    td {
+      padding: 0.4rem;
+    }
+  }
+}
+
+.booking__table-number {
+  width: 50px;
+}
+
+.booking__table-order {
+  width: 60px;
+}
+
+.booking__table-fullname {
+  width: 150px;
+}
+
+// .booking__table-phone {
+//   width: 130px;
+//   white-space: nowrap;
+// }
+
+.booking__table-event {
+
+}
+
+.booking__table-sector {
+  width: 150px;
+}
+
+.booking__table-row {
+  width: 30px;
+}
+
+.booking__table-place {
+  width: 50px;
+}
+
+.booking__table-price {
+  width: 50px;
+}
+
+.booking__table-cash {
+  width: 100px;
+}
+
+.booking__table-action {
+  width: 160px;
+}
+
+.booking__table-action-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking__table-date {
+  width: 150px;
+}
+
+.booking__table-date-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.booking__table-total {
+  text-align: right;
+}
+
+.booking__table-btn {
+  display: inline-flex !important;
+
+  svg {
+    margin-right: 10px;
+  }
+}
+

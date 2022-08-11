@@ -1,0 +1,18 @@
+//global
+  @import "../../global/scss/global/normalize";
+  @import "../../global/scss/mixins/mediaquery";
+  @import "../../global/scss/mixins/visually-hidden";
+  @import "global/variables";
+  @import "global/global-scaffolding";
+//_________
+
+@import "../components/Common/Cross/Cross";
+@import "../components/Common/Popup/Popup";
+@import "../components/Common/Preloader/Preloader";
+
+@import "../components/Common/KasirHeader/KasirHeader";
+@import "../components/ReportKasir/ReportKasir";
+@import "../components/ReportKassDay/ReportKassDay";
+@import "../components/ReportOnLineSale/ReportOnLineSale";
+@import "_blocks/reports-table";
+@import "_blocks/print";

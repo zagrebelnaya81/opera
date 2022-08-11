@@ -1,0 +1,47 @@
+version: '3'
+services:
+  opera_php:
+    build: ./php
+    volumes:
+      - ../.:/var/www/html
+    ports:
+      - 8011:80
+    container_name: opera_php
+    environment:
+      WEB_DOCUMENT_ROOT: /var/www/html/public
+      WEB_DOCUMENT_INDEX: index.php
+      PHP_MEMORY_LIMIT: 4048M
+      PHP_UPLOAD_MAX_FILESIZE: 512M
+      PHP_POST_MAX_SIZE: 512M
+      PHP_DATE_TIMEZONE: Europe/Kiev
+      PHP_DISPLAY_ERRORS: 1
+      php.xdebug.max_nesting_level: 500
+      php.xdebug.var_display_max_data: 10024
+    networks:
+      - opera_net
+
+  opera_mysql:
+    build: ./mysql/
+    container_name: opera_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootRoot
+      MYSQL_DATABASE: theatre
+      TZ: Europe/Kiev
+    ports:
+      - 3699:3306
+    volumes:
+      - opera_mysql_data:/var/lib/mysql
+    networks:
+      - opera_net
+
+#  vauboo_redis:
+#    image: "redis:alpine"
+#    container_name: opera_redis
+#    networks:
+#      - opera_net
+
+networks:
+  opera_net:
+
+volumes:
+  opera_mysql_data:

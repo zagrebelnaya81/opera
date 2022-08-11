@@ -1,0 +1,37 @@
+.hall-description {
+  text-align: center;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $gray;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.hall-description__title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    overflow: visible;
+  }
+}
+
+.hall-description__date-time {
+  margin: 0 0 3px;
+  font-size: 12px;
+  color: red;
+  font-weight: 700;
+}
+
+.hall-description__hall {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+

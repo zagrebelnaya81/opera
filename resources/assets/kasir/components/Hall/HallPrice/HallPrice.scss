@@ -1,0 +1,28 @@
+.hall-price {
+  text-align: center;
+  flex-grow: 1;
+  overflow: auto;
+
+  &:not(:last-child) {
+    padding: 0 0 10px;
+    border-bottom: 1px solid $gray;
+    margin: 0 0 10px;
+  }
+}
+
+.hall-price__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.hall-price__color {
+  border-radius: 5px;
+  color: #fff;
+}

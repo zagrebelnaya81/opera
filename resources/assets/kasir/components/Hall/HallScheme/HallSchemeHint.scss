@@ -1,0 +1,55 @@
+.scheme-seat-hint {
+  padding: 5px;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  // background: #eee;
+  background: #f8f9fa;
+  color: #000;
+  text-align: center;
+  // min-width: 120px;
+  font-size: 18px;
+  // line-height: 1.43;
+  line-height: 1;
+  display: flex;
+  text-align: left;
+
+  // &::after {
+  //   content: "";
+  //   border-left: 13px solid transparent;
+  //   border-right: 13px solid transparent;
+  //   position: absolute;
+  // }
+
+  // &--left {
+  //   &::after {
+  //     left: 0;
+  //   }
+  // }
+
+  // &--right {
+  //   &::after {
+  //     right: 0;
+  //   }
+  // }
+
+  // &--top {
+  //   &::after {
+  //     bottom: 100%;
+  //     border-bottom: $brand 14px solid;
+  //   }
+  // }
+
+  // &--bottom {
+  //   &::after {
+  //     top: 100%;
+  //     border-top: $brand 14px solid;
+  //   }
+  // }
+
+  p {
+    margin: 0 2px;
+    white-space: nowrap;
+  }
+}

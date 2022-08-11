@@ -1,0 +1,86 @@
+.description-text-title {
+  margin: 20px auto 40px;
+  max-width: 685px;
+
+  &--call-us {
+    .description-text-title__title {
+      font-family: $font-main;
+      font-size: 20px;
+    }
+  }
+
+  &--big {
+    margin-bottom: 90px;
+  }
+
+  &.vacancy {
+    max-width: 80%;
+    h2 {
+      font-family: "PlayfairDisplay", "Times New Roman", Times, serif;
+    }
+    p {
+      font-family: "Lato", BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+    }
+    .description-text-title__wraper {
+      background: #f4ede9;
+      border: 1px solid #cc9933;
+      padding: 10px;
+    }
+  }
+}
+
+.description-text-title__wraper {
+  font-size: 18px;
+  line-height: 1.44;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: $gold;
+  }
+}
+
+.description-text-title__title {
+  @include title-24;
+  margin: 0 0 25px;
+  max-width: 685px;
+}
+
+
+@media #{$s} {
+
+  .description-text-title {
+    margin: 20px auto 50px;
+
+    &--call-us {
+      padding: 12px 0 0;
+
+      .description-text-title__title {
+        font-size: 16px;
+        line-height: 1.75;
+      }
+
+      .description-text-title__wraper {
+        text-align: center;
+      }
+    }
+  }
+
+  .description-text-title__wraper {
+    font-size: 16px;
+    line-height: 1.56;
+    // text-align: center;
+  }
+
+  .description-text-title__title {
+    font-size: 16px;
+    line-height: 1.56;
+    font-family: $font-main;
+  }
+}

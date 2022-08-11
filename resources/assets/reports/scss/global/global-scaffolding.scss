@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 1.38;
+}
+
+body {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.body-popup {
+  overflow: hidden;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.wrap-full {
+  padding: 5px;
+}
+
+.title {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+  text-align: center;
+
+  span {
+    text-decoration: underline;
+  }
+}
+
+// @media (max-width: 1400px) {
+//   .title {
+//     font-size: 18px;
+//   }
+// }

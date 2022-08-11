@@ -1,0 +1,47 @@
+.print {
+  margin: 0 auto;
+  display: none;
+  font-family: "Times New Roman", serif;
+  line-height: 1.38;
+}
+
+.print__ticket {
+  page-break-inside: avoid;
+  page-break-after: always;
+  position: relative;
+}
+
+.print__el {
+  position: absolute;
+  // white-space: pre;
+
+  &--barcode {
+    white-space: normal;
+  }
+}
+
+// @media (min-width: 1000px) {
+@media print {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  // #print {
+    .popup,
+    .wrap,
+    .wrap-full,
+    .kasir-header {
+      display: none !important;
+    }
+
+    .print {
+      display: block;
+    }
+
+    @page {
+      margin: 0;
+    }
+  // }
+}

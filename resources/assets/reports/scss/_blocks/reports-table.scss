@@ -1,0 +1,40 @@
+.reports-table-wrap {
+  height: calc(100vh - 52px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.reports-table-inner {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.reports-table {
+  // margin-top: 30px;
+  table-layout: fixed;
+
+  td,
+  th {
+    padding: 5px;
+    vertical-align: middle !important;
+  }
+}
+
+.reports-table__action {
+  text-align: center;
+  width: 100px;
+}
+
+.reports-table__period {
+  width: 270px;
+  text-align: center;
+}
+
+.reports-table__input {
+  width: 100%;
+  display: block;
+  border: 1px solid #ccc;
+  font: inherit;
+  padding: 2px 5px;
+}

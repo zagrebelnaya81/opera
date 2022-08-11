@@ -1,0 +1,185 @@
+.report-kasir {
+  margin: 0;
+  table-layout: fixed;
+
+  caption {
+    display: none;
+  }
+
+  td,
+  th {
+    padding: 1px 5px;
+    vertical-align: middle !important;
+  }
+
+  thead {
+    text-align: center;
+
+    .report-kasir__date,
+    .report-kasir__time,
+    .report-kasir__name,
+    .report-kasir__hall,
+    .report-kasir__price,
+    .report-kasir__pib,
+    .report-kasir__distributor {
+      &:not(.active) {
+        cursor: pointer;
+        background: #eee;
+        transition: 0.3s;
+
+        &:hover {
+          background: #ccc;
+        }
+      }
+
+      &.active {
+        background: #bbb;
+      }
+    }
+  }
+}
+
+.report-kasir__date {
+  width: 110px;
+}
+
+.report-kasir__time {
+  width: 50px;
+}
+
+.report-kasir__name {
+  width: 100%;
+}
+
+.report-kasir__hall {
+  width: 120px;
+}
+
+.report-kasir__distributor {
+  width: 150px;
+}
+
+.report-kasir__pib {
+  width: 150px;
+}
+
+.report-kasir__price {
+  width: 60px;
+}
+
+.report-kasir__table-wrap {
+  margin: -1px;
+}
+
+.report-kasir__table {
+  margin: 0;
+  table-layout: fixed;
+}
+
+// Width field with amount and sum
+
+$total-width: 400px;
+
+.report-kasir__total {
+  width: $total-width;
+}
+
+.report-kasir__amount {
+  width: $total-width / 5;
+}
+
+$total-senior-width: 320px;
+
+.report-kasir__senior-total {
+  width: $total-senior-width;
+}
+
+.report-kasir__senior-amount {
+  width: $total-senior-width / 4;
+}
+
+$total-distributor-width: 160px;
+
+.report-kasir__distributor-total {
+  width: $total-distributor-width;
+}
+
+.report-kasir__distributor-amount {
+  width: $total-distributor-width;
+}
+
+$total-price-cut-width: 170px;
+
+.report-kasir__price-cut-total {
+  width: $total-price-cut-width;
+}
+
+.report-kasir__price-cut-amount {
+  width: $total-price-cut-width;
+}
+
+$total-detailed-width: 240px;
+
+.report-kasir__detailed-total {
+  width: $total-detailed-width;
+}
+
+.report-kasir__detailed-amount {
+  width: $total-detailed-width / 3;
+}
+
+// @media (max-width: 1400px) {
+//   .report-kasir {
+//     margin-top: 20px;
+//     font-size: 12px;
+
+//     td,
+//     th {
+//       padding: 5px;
+//     }
+//   }
+
+//   .report-kasir__date {
+//     width: 100px;
+//   }
+
+//   .report-kasir__time {
+//     width: 50px;
+//   }
+
+//   .report-kasir__hall {
+//     width: 130px;
+//   }
+
+//   // // Width field with amount and sum
+
+//   $total-width: 400px;
+
+//   .report-kasir__total {
+//     width: $total-width;
+//   }
+
+//   .report-kasir__amount {
+//     width: $total-width / 5;
+//   }
+
+//   $total-senior-width: 300px;
+
+//   .report-kasir__senior-total {
+//     width: $total-senior-width;
+//   }
+
+//   .report-kasir__senior-amount {
+//     width: $total-senior-width / 4;
+//   }
+
+//   $total-detailed-width: 200px;
+
+//   .report-kasir__detailed-total {
+//     width: $total-detailed-width;
+//   }
+
+//   .report-kasir__detailed-amount {
+//     width: $total-detailed-width / 3;
+//   }
+// }

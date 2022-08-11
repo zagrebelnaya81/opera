@@ -1,0 +1,18 @@
+.poster {
+  display: flex;
+  align-items: flex-start;
+  margin: 5px 0;
+  height: calc(100vh - 46px);
+}
+
+.poster__aside {
+  width: 150px;
+  flex-shrink: 0;
+  margin-right: 5px;
+}
+
+.poster__data {
+  flex-grow: 1;
+  overflow: auto;
+  height: 100%;
+}
